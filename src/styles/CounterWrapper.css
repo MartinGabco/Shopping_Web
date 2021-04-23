@@ -1,0 +1,19 @@
+/*main axis*/
+/*cross axis*/
+/*Properties of the children*/
+.counter-wrapper {
+  width: 100%;
+  padding: 0.75em 0 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*# sourceMappingURL=CounterWrapper.css.map */

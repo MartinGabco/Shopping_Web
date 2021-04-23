@@ -1,0 +1,103 @@
+/*main axis*/
+/*cross axis*/
+/*Properties of the children*/
+/*SASS MEDIA QUERIES*/
+/*375px/16px*/
+/*1024px/16px*/
+/*1339px/16px*/
+.App {
+  background: #80ffff;
+}
+
+.App header {
+  min-height: 5em;
+  padding: 0 1.95em 0 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.App header .logo-box {
+  max-height: 100%;
+  padding-top: 0.3em;
+  margin-right: 0.35em;
+}
+
+.App footer {
+  min-height: 45.4em;
+  background: #99ff33;
+}
+
+.App footer .rights {
+  min-height: 40.4em;
+  padding: 3.5em 0 3.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  background-color: #66ffff;
+}
+
+.App footer .rights .rights-box {
+  width: 80%;
+  height: 35em;
+  margin: 0 auto;
+  padding: 3em 1em 1em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
+  background-color: #ffff00;
+}
+
+@media (max-width: 82.6875em) {
+  .App footer .rights .rights-box {
+    height: 37.9em;
+  }
+}
+
+.App footer .rights .rights-box h1 {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.App footer .rights .rights-box h2 {
+  padding-top: 0.25em;
+}
+
+.App footer .design {
+  min-height: 8em;
+  padding-top: 3.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=App.css.map */

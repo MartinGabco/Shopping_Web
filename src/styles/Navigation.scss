@@ -1,0 +1,23 @@
+//imports
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+@import 'imports/colors.scss';
+
+.navbar {
+    width: 16.8em;
+    margin: 1.75em 1.75em 0 0;
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include justify-content (space-between);
+    
+    .navbar-nav {
+        font-size: 1.3em;
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none; 
+        padding: 0 1em 0 0;
+    }
+}
+

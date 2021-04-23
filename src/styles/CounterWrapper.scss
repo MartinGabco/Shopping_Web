@@ -1,0 +1,10 @@
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+
+.counter-wrapper {
+    width: $width-primary;
+    padding: 0.75em 0 1em 0;   
+    @include flexbox();
+    @include flex-direction(column);  
+    @include align-items(center);
+}

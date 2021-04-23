@@ -1,0 +1,171 @@
+/*main axis*/
+/*cross axis*/
+/*Properties of the children*/
+/*SASS MEDIA QUERIES*/
+/*375px/16px*/
+/*1024px/16px*/
+/*1339px/16px*/
+.products-box,
+.product-header,
+.main,
+.image-box,
+.name-box,
+.price,
+.counter-box {
+  width: 100%;
+}
+
+.container {
+  max-width: 80%;
+  padding: 2.5em 0 1.6em 0.85em;
+  margin-bottom: 3em;
+  background-color: #ffff00;
+}
+
+.container .products-box {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  list-style: none;
+  -webkit-transform: translateX(-0.65em);
+          transform: translateX(-0.65em);
+}
+
+.container .products-box .item {
+  max-width: 30%;
+  height: 45em;
+  margin: 1em 1.25em 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background-color: #ffffff;
+}
+
+@media (max-width: 82.6875em) {
+  .container .products-box .item {
+    max-width: 40%;
+    margin: 1.1em 1.35em 1em 1.05em;
+  }
+}
+
+.container .products-box .item .product-header {
+  height: 6%;
+  padding: 0.7em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.container .products-box .item .product-header .product-delete {
+  cursor: pointer;
+  color: #ff9900;
+}
+
+.container .products-box .item .product-header .product-delete:hover {
+  color: #000000;
+}
+
+.container .products-box .item .product-header .like-box {
+  margin-left: 8.25em;
+}
+
+.container .products-box .item .main {
+  height: 69%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.container .products-box .item .main .image-box {
+  height: 40%;
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container .products-box .item .main .name-box {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.container .products-box .item .main .name-box .brand,
+.container .products-box .item .main .name-box .name {
+  text-align: center;
+  padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.container .products-box .item .main .name-box .name {
+  padding-bottom: 1em;
+}
+
+.container .products-box .item .main .name-box .description {
+  font-size: 1em;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.container .products-box .item .price {
+  height: 5%;
+  padding-top: 0.45em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container .products-box .item .counter-box {
+  height: 20%;
+  padding-bottom: 2em;
+}
+/*# sourceMappingURL=MainContent.css.map */

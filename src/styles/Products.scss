@@ -1,0 +1,88 @@
+//imports
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+@import 'imports/colors.scss';
+@import 'imports/MediaQueries.scss';
+
+//width - common property
+.products-content,
+.user-area,
+.shop-header,
+.shop-main {
+    width: $width-primary;
+}
+
+//content
+.products-content {
+    @include flexbox();
+    @include flex-direction(column);
+    overflow: hidden;
+
+    .preview {
+        height: 34em;
+        @include flexbox();
+        @include flex-direction(row);
+
+        .promo-image {
+            width: 36.66em;
+        }
+    }
+
+    .user-area {
+        min-height: 50em;
+        padding: 4em 3em 1em 3em;
+        @include flexbox();
+        @include flex-direction(row);
+        background: #56CCF2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        .shop-content {
+            width: 80%;
+            padding-bottom: 3em;
+            margin-left: 3em;
+  
+            .shop-header {
+                height: 7em;
+                padding: 2.4em 2em 0 2.25em;
+                background-color: $color-header;
+            }
+
+            .shop-main {
+                min-height: 40em;                
+                padding-top: 3em;
+
+                .number_products {
+                    height: 2.5em;
+                    padding: 0.5em 0 0 0.75em;
+                    margin: $margin-primary;
+                    color: $color-first;
+                    background-color: $color-products;
+                    @media #{$screen-laptop-down} {
+                        height: 210%; 
+                        padding: 1.15em 0em 1em 0;
+                        text-align: center;
+                    }
+                }
+
+                .pagin {
+                    margin-left: 45%;  
+                    @media #{$screen-laptop-down} {
+                        margin-left: 43%;
+                    }                
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+//imports
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+@import 'imports/colors.scss';
+@import 'imports/MediaQueries.scss';
+
+.App {
+    background: $color-primary;
+
+    header {
+        min-height: 5em;
+        padding: 0 1.95em 0 1.5em;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between); 
+        background: $color-secondary;
+
+        .logo-box {
+            max-height: 100%;
+            padding-top: 0.3em;
+            margin-right: 0.35em;
+        }
+    }
+
+    footer {
+        min-height: 45.4em;
+        background: $color-terciary;
+
+        .rights {
+            min-height: 40.4em;
+            padding: 3.5em 0 3.5em 0;
+            @include flexbox();
+            @include flex-direction(row);
+            background-color: $color-price;
+
+            .rights-box {
+                width: 80%;
+                height: 35em;
+                margin: 0 auto;
+                padding: 3em 1em 1em 4em;
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-content(space-around);
+                background-color: $color-products;
+                @media #{$screen-laptop-down} {
+                    height: 37.9em;
+                }
+
+                h1 {
+                    font-weight: bold;
+                    color: $color-user;
+                }
+
+                h2 {
+                    padding-top: 0.25em;
+                }
+            }
+        }
+
+        .design {
+            min-height: 8em;   
+            padding-top: 3.25em;
+            @include flexbox();
+            @include flex-direction(row);
+            @include justify-content(center);
+            background-color: $color-secondary;
+        }
+    }
+}

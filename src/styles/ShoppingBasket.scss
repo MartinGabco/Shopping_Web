@@ -1,0 +1,37 @@
+@import 'imports/flexbox.scss';
+@import 'imports/colors.scss';
+@import 'imports/MediaQueries.scss';
+
+.basket {
+    width: 6em;
+    height: 4em;
+    padding: 0.65em 0.55em 0.5em 0.55em;
+    margin: 0 12em 1em 56em;
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-around);
+
+    color: $color-basket;
+    background-color: $color-products;
+
+    .fa {
+        padding-top: 0.175em;
+    }
+
+    p {
+        font-size: 2.2em;
+    }
+    transform: translate(-1.7em, -11em);
+    -webkit-transform: translate(-1.7em, -11em);
+    -moz-transform: translate(-1.7em, -11em);
+    -ms-transform: translate(-1.7em, -11em);
+    -o-transform: translate(-1.7em, -11em);
+
+    @media #{$screen-laptop-down} {
+        transform: translate(-18.75em,-13.6em);
+        -webkit-transform: translate(-18.75em,-13.6em);
+        -moz-transform: translate(-18.75em,-13.6em);
+        -ms-transform: translate(-18.75em,-13.6em);
+        -o-transform: translate(-18.75em,-13.6em);
+    }
+}

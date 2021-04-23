@@ -1,0 +1,65 @@
+@import 'imports/colors.scss';
+@import 'imports/MediaQueries.scss';
+
+.carousel,
+.first,
+.second {
+    width: 51em;
+    height: 34em;
+    background: no-repeat;
+}
+
+.first,
+.second {
+    position: absolute;
+    background: no-repeat;
+    color: $color-first;
+}
+
+.first {
+    padding: 11em 0em 0 7.85em;
+    @media #{$screen-laptop-down} {
+        padding: 8.5em 10em 0 9.5em;
+    }
+
+    .title-box {
+        h2 {
+            font-size: 3em;
+        }
+        h1 {
+            font-size: 5.5em;
+        }
+    } 
+}
+
+.second {
+    padding: 5.98em 0 0 1.7em;
+
+    .sale-box {
+        h4 {
+            font-size: 5.3em;
+        }
+        .number {
+            font-size: 8.5em;
+            margin-top: -0.3em;
+            transform: translateX(-0.05em);
+            color: $color-user;
+        }
+        .products-click {
+            text-decoration: none;         
+
+            p {
+                width: 6em;  
+                font-size: 2.5em;
+                padding: 0.25em 0.5em 0.25em 0.5em;
+                background: $color-products;
+                cursor: pointer;
+                &:hover,
+                &:focus {
+                    color: #ff0066;
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}

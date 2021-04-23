@@ -1,0 +1,116 @@
+//imports
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+@import 'imports/colors.scss';
+@import 'imports/MediaQueries.scss';
+
+//width-common property
+.products-box,
+.product-header,
+.main,
+.image-box,
+.name-box,
+.price,
+.counter-box {
+    width: $width-primary;
+}
+
+.container {
+    max-width: 80%;
+    padding: 2.5em 0 1.6em 0.85em; 
+    margin-bottom: 3em;
+    background-color: $color-products;
+
+    .products-box {
+        max-width: $width-primary;
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content (left);
+        list-style: none;
+        transform: translateX(-0.65em);
+
+        .item {
+            max-width: 30%;
+            height: 45em;
+            margin: 1em 1.25em 1em 0;
+            @include flexbox();
+            @include flex-direction(column);
+            background-color: $color-secondary;  
+
+            @media #{$screen-laptop-down} {
+                max-width: 40%;
+                margin: 1.1em 1.35em 1em 1.05em;
+            }
+            
+            .product-header {
+                height: 6%;   
+                padding: 0.7em 0 0 0;   
+                @include flexbox();
+                @include flex-direction(row);
+                @include justify-content(space-around);
+
+                .product-delete {
+                    cursor: pointer;
+                    color: $color-delete;
+                    &:hover {
+                        color: $color-black;
+                    }
+                }  
+                .like-box {
+                    margin-left: 8.25em;
+                }            
+            }
+
+            .main {
+                height: 69%;
+                @include flexbox();
+                @include flex-direction(column);              
+
+                .image-box {
+                    height: 40%;
+                    padding-top: 1em;                    
+                    @include flexbox();
+                    @include flex-direction(row);    
+                    @include justify-content(center);
+                }
+
+                .name-box {
+                    height: 60%;
+                    @include flexbox();
+                    @include flex-direction(column);   
+
+                    .brand,
+                    .name {
+                        text-align: center;
+                        padding: 1em 0.5em 0.5em 0.5em;
+                    }
+
+                    .name {
+                        padding-bottom: 1em;
+                    }
+
+                    .description {
+                        font-size: 1em;                        
+                        text-align: center;
+                        padding: 0.5em 0.5em 0.5em 0.5em;
+                    } 
+                }                
+            }
+
+            .price {
+                height: 5%;
+                padding-top: 0.45em;                
+                @include flexbox();
+                @include flex-direction(row);    
+                @include justify-content(center);
+            }
+            
+            .counter-box {
+                height: 20%;
+                padding-bottom: 2em;
+            }
+        }
+    }  
+}
+
