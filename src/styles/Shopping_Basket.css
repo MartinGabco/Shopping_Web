@@ -1,8 +1,9 @@
 /*main axis*/
 /*cross axis*/
 /*Properties of the children*/
-.home {
+.shopping_basket {
   width: 100%;
+  height: 41em;
   padding: 5em 0 5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,11 +15,15 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  background: #00c6ff;
+  background: #F7971E;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00c6ff));
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+  background: -webkit-gradient(linear, left top, right top, from(#FFD200), to(#F7971E));
+  background: linear-gradient(to right, #FFD200, #F7971E);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/*# sourceMappingURL=Forum.css.map *//*# sourceMappingURL=Forum.css.map */
+.shopping_basket .select-box {
+  width: 60%;
+  min-height: 50%;
+  background: #ffffff;
+}/*# sourceMappingURL=Shopping_Basket.css.map */

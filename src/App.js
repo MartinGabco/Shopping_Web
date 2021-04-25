@@ -6,6 +6,7 @@ import ReactFontLoader from 'react-font-loader';
 import Navigation from './Navigation';
 import Products from './Products';
 import Forum from './Forum';
+import Shopping_Basket from './Shopping_Basket';
 
 //styles ()
 import './styles/App.css';
@@ -28,8 +29,9 @@ class App extends Component {
                 <main className="content">
                     <div className="preview"></div>
                     <Switch>
-                        <Route path="/" component={Products} exact />                      
-                        <Route path="/forum" component={Forum} />                                                        
+                        <Route path="/" component={Products} exact />                
+                        <Route path="/forum" component={Forum} />
+                        <Route path="/shopping_basket" component={Shopping_Basket} />                                                        
                     </Switch>
                 </main>
                 <footer className="footer">
@@ -60,5 +62,5 @@ class App extends Component {
         );
     };
 };
-
+ 
 export default App;

@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AC4CA,aAAa;AA6Bb,cAAc;AA+Bd,8BAA8B;ADnG9B,AAAA,KAAK,CAAC;EACF,KAAK,EELO,IAAI;EFMhB,OAAO,EAAE,WAAW;ECApB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,QAAQ;EACjB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;EAcb,sBAAsB,EAAE,UAAU;EAClC,mBAAmB,EAAE,UAAU;EAC/B,kBAAkB,EAAE,GAAG;EACvB,sBAAsB,EAAE,GAAG;EAC3B,cAAc,EAAE,GAChB;EAiCE,aAAa,EAAE,UAAU;EAMzB,uBAAuB,ED3DA,YAAY;EC4DnC,eAAe,ED5DQ,YAAY;EACrC,UAAU,EAAE,OAAO;EAAG,+BAA+B;EACrD,UAAU,EAAE,mDAAmD;EAAG,gCAAgC;EAClG,UAAU,EAAE,2CAA2C;EAAE,sEAAsE;CAClI;;AACD,oCAAoC",
-    "sources": [
-        "Forum.scss",
-        "imports/flexbox.scss",
-        "imports/BaseProperties.scss",
-        "imports/colors.scss"
-    ],
-    "names": [],
-    "file": "Forum.css"
-}
+{"version":3,"sources":["imports/flexbox.scss","Forum.scss","imports/BaseProperties.scss"],"names":[],"mappings":"AA4CA,YAAA;AA6BA,aAAA;AA+BA,6BAAA;ACnGA;EACI,WCLY;EDMZ,oBAAA;EDAA,oBAAA;EAEA,oBAAA;EAEA,aAAA;EAeA,+BAAA;EACA,uBAAA;EAEA,8BAAA;EAAA,6BAAA;UAAA,mBAAA;EAkCE,yBAAA;EAOA,6BC5DuB;EACzB,mBAAA;EAAsB,8BAAA;EAC4C,+BAAA;EAClE,qFAAA;EAAA,uDAAA;EAAyD,qEAAA;AAY7D","file":"Forum.css"}

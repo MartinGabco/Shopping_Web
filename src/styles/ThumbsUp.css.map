@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,GAAG,CAAC,YAAY,CAAC;EACb,SAAS,EAAE,MAAM;CACpB",
-    "sources": [
-        "ThumbsUp.scss"
-    ],
-    "names": [],
-    "file": "ThumbsUp.css"
-}
+{"version":3,"sources":["ThumbsUp.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;AACJ","file":"ThumbsUp.css"}

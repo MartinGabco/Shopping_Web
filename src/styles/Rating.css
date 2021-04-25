@@ -19,7 +19,6 @@
   align-content: center;
   background-color: #ffffff;
 }
-
 .rating .title {
   height: 17.5em;
   padding: 2.75em 0 1em 0;
@@ -38,26 +37,21 @@
           order: 1;
   color: #0000ff;
 }
-
 .rating .title h2 {
   font-style: italic;
 }
-
 @media (min-width: 64em) {
   .rating .title h2 {
     text-align: center;
   }
 }
-
 .rating .title p {
   font-size: 1.5em;
 }
-
 .rating .title h2,
 .rating .title p {
   margin: 0 auto;
 }
-
 .rating .user-form {
   min-height: 25em;
   padding: 1em 0 5.5em 0;
@@ -79,7 +73,6 @@
       -ms-flex-order: 2;
           order: 2;
 }
-
 .rating .user-form .form-box {
   width: 70%;
   min-height: 20em;
@@ -102,7 +95,6 @@
   background: linear-gradient(to right, #0072ff, #00c6ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 .rating .user-form .form-box .form-holder {
   font-size: 1.25em;
   display: -webkit-box;
@@ -119,7 +111,6 @@
   -ms-flex-line-pack: space-around;
   align-content: space-around;
 }
-
 .rating .user-form .form-box .form-holder input,
 .rating .user-form .form-box .form-holder textarea {
   width: 20em;
@@ -127,19 +118,16 @@
   border: none;
   color: #0000ff;
 }
-
 .rating .user-form .form-box .form-holder input {
   height: 2.25em;
   padding: 0 0.5em 0 0.5em;
   text-decoration: none;
 }
-
 .rating .user-form .form-box .form-holder textarea {
   height: 6em;
   padding: 0.25em 0.5em 0.25em 0.5em;
   display: block;
 }
-
 .rating .user-form .form-box .form-holder .confirm-button {
   width: 10em;
   padding: 0.3em 0.3em 0.3em 0.3em;
@@ -150,12 +138,10 @@
   border: none;
   cursor: pointer;
 }
-
 .rating .user-form .form-box .form-holder .confirm-button:hover, .rating .user-form .form-box .form-holder .confirm-button:focus {
   color: #ffffff;
   background-color: #ff0000;
 }
-
 .rating .user-forum {
   min-height: 35em;
   padding: 4.3em 2.5em 1em 0;
@@ -178,18 +164,15 @@
           order: 3;
   background-color: #80ccff;
 }
-
 .rating .user-forum h1 {
   font-size: 3em;
   margin: 0 auto;
   padding-left: 0.8em;
   color: #ff0000;
 }
-
 .rating .user-forum .list {
   list-style: none;
 }
-
 .rating .user-forum .list .response-box {
   min-height: 8em;
   font-size: 1.25em;
@@ -205,7 +188,6 @@
           flex-direction: column;
   background-color: #ffff1a;
 }
-
 .rating .user-forum .list .response-box .delete {
   font-size: 2em;
   font-weigth: bold;
@@ -214,38 +196,31 @@
   color: #ff9900;
   cursor: pointer;
 }
-
 .rating .user-forum .list .response-box .span_username {
   font-size: 1.75em;
   font-weight: bold;
   padding-bottom: 0.5em;
   color: #0000ff;
 }
-
 .rating .user-forum .list .response-box .span_message {
   color: #3333ff;
 }
-
 .rating .user-forum .list .response-box .span_liked {
   text-align: right;
   padding: 0.5em 0.25em 0.5em 0;
 }
-
 .rating .user-forum .list .response-box .box,
 .rating .user-forum .list .response-box .alter {
   width: 30em;
   height: 10em;
 }
-
 .rating .user-forum .list .response-box .box {
   margin-top: -2em;
 }
-
 .rating .user-forum .list .response-box .box .article {
   width: 10em;
   height: auto;
   padding-bottom: 0.5em;
   margin: 2em 0 2em 0;
   list-style: none;
-}
-/*# sourceMappingURL=Rating.css.map */
+}/*# sourceMappingURL=Rating.css.map */

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,sBAAsB;AACK,cAAc;AACrB,eAAe;AACR,eAAe",
-    "sources": [
-        "MediaQueries.scss"
-    ],
-    "names": [],
-    "file": "MediaQueries.css"
-}
+{"version":3,"sources":["MediaQueries.scss"],"names":[],"mappings":"AAAA,qBAAA;AAC2B,aAAA;AACP,cAAA;AACO,cAAA","file":"MediaQueries.css"}

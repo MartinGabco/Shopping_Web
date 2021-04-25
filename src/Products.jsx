@@ -72,6 +72,8 @@ class Products extends ProductsHandleSource {
         const { pageSize, currentPage, searchQuery } = this.state;
 
         const { totalCount, data: products } = this.getPagedData();
+
+        const { data } = this.context;
           
         return (
             <div className="products-content">
@@ -93,7 +95,7 @@ class Products extends ProductsHandleSource {
                         <header className="shop-header">
                             <SearchBox 
                                 value={searchQuery} 
-                                onChange={this.handleSearch}    
+                                onChange={this.handleSearch}   
                             />
                         </header>
                         <main className="shop-main" id="sale_button">
@@ -123,4 +125,4 @@ class Products extends ProductsHandleSource {
     }
 }
 
-export default Products
+export default Products;

@@ -28,15 +28,12 @@
   -ms-transform: translate(-1.7em, -11em);
   -o-transform: translate(-1.7em, -11em);
 }
-
 .basket .fa {
   padding-top: 0.175em;
 }
-
 .basket p {
   font-size: 2.2em;
 }
-
 @media (max-width: 82.6875em) {
   .basket {
     transform: translate(-18.75em, -13.6em);
@@ -45,5 +42,4 @@
     -ms-transform: translate(-18.75em, -13.6em);
     -o-transform: translate(-18.75em, -13.6em);
   }
-}
-/*# sourceMappingURL=ShoppingBasket.css.map */
+}/*# sourceMappingURL=ShoppingBasket.css.map */

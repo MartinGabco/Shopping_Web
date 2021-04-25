@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AA4CA,aAAa;AA6Bb,cAAc;AA+Bd,8BAA8B",
-    "sources": [
-        "flexbox.scss"
-    ],
-    "names": [],
-    "file": "flexbox.css"
-}
+{"version":3,"sources":["flexbox.scss"],"names":[],"mappings":"AA4CA,YAAA;AA6BA,aAAA;AA+BA,6BAAA","file":"flexbox.css"}

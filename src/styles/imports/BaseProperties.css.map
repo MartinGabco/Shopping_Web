@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "BaseProperties.scss"
-    ],
-    "names": [],
-    "file": "BaseProperties.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"BaseProperties.css"}

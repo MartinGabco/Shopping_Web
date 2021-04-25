@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AC4CA,aAAa;AA6Bb,cAAc;AA+Bd,8BAA8B;ADnG9B,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,iBAAiB;ECAzB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,QAAQ;EACjB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;EAoCX,gBAAgB,EAAE,KAAK;EACvB,aAAa,EAAE,KAAK;EACpB,aAAa,EAAE,KAAK;EAoBpB,uBAAuB,ED5DA,UAAU;EC6DjC,eAAe,ED7DQ,UAAU;ECkDjC,gBAAgB,EAAE,OAAO;EACzB,aAAa,EAAE,OAAO;EACtB,aAAa,EAAE,OAAO;EAQtB,uBAAuB,ED3DC,aAAa;EC4DrC,eAAe,ED5DS,aAAa;CAW1C;;AAhBD,AAOI,OAPG,CAOH,WAAW,CAAC;EACR,SAAS,EAAE,KAAK;CACnB;;AATL,AAWI,OAXG,CAWH,CAAC,CAAC;EACE,cAAc,EAAE,SAAS;EACzB,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,SAAS;CACrB",
-    "sources": [
-        "Navigation.scss",
-        "imports/flexbox.scss",
-        "imports/BaseProperties.scss",
-        "imports/colors.scss"
-    ],
-    "names": [],
-    "file": "Navigation.css"
-}
+{"version":3,"sources":["imports/flexbox.scss","Navigation.scss"],"names":[],"mappings":"AA4CA,YAAA;AA6BA,aAAA;AA+BA,6BAAA;ACnGA;EACI,aAAA;EACA,yBAAA;EDAA,oBAAA;EAEA,oBAAA;EAEA,aAAA;EAoCE,uBAAA;EAEA,oBAAA;EAqBA,2BC7DuB;EDkDvB,yBAAA;EAEA,sBAAA;EASA,8BC5DwB;AAW9B;AATI;EACI,gBAAA;AAWR;AARI;EACI,yBAAA;EACA,qBAAA;EACA,kBAAA;AAUR","file":"Navigation.css"}

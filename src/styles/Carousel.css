@@ -20,17 +20,14 @@
 .first {
   padding: 11em 0em 0 7.85em;
 }
-
 @media (max-width: 82.6875em) {
   .first {
     padding: 8.5em 10em 0 9.5em;
   }
 }
-
 .first .title-box h2 {
   font-size: 3em;
 }
-
 .first .title-box h1 {
   font-size: 5.5em;
 }
@@ -38,11 +35,9 @@
 .second {
   padding: 5.98em 0 0 1.7em;
 }
-
 .second .sale-box h4 {
   font-size: 5.3em;
 }
-
 .second .sale-box .number {
   font-size: 8.5em;
   margin-top: -0.3em;
@@ -50,11 +45,9 @@
           transform: translateX(-0.05em);
   color: #ff0000;
 }
-
 .second .sale-box .products-click {
   text-decoration: none;
 }
-
 .second .sale-box .products-click p {
   width: 6em;
   font-size: 2.5em;
@@ -62,9 +55,7 @@
   background: #ffff00;
   cursor: pointer;
 }
-
 .second .sale-box .products-click p:hover, .second .sale-box .products-click p:focus {
   color: #ff0066;
   background: #ffffff;
-}
-/*# sourceMappingURL=Carousel.css.map */
+}/*# sourceMappingURL=Carousel.css.map */
