@@ -8,7 +8,6 @@ const Shopping_Basket = () => {
         <div className="shopping_basket">
            <div className="select-box"></div>
         </div>
-    )
 };
 
 export default Shopping_Basket;
