@@ -8,8 +8,8 @@
 .basket {
   width: 6em;
   height: 4em;
-  padding: 0.65em 0.55em 0.5em 0.55em;
-  margin: 0 12em 1em 56em;
+  padding: 0.5em 0.55em 0.5em 0.55em;
+  margin: 0 12em 1em 64.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,11 +28,16 @@
   -ms-transform: translate(-1.7em, -11em);
   -o-transform: translate(-1.7em, -11em);
 }
+@media (max-width: 82.6875em) {
+  .basket {
+    margin-left: 56em;
+  }
+}
 .basket .fa {
   padding-top: 0.175em;
 }
 .basket p {
-  font-size: 2.2em;
+  font-size: 1.8em;
 }
 @media (max-width: 82.6875em) {
   .basket {

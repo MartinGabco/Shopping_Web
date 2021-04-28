@@ -36,8 +36,7 @@ class App extends Component {
                 </main>
                 <footer className="footer">
                     <div className="rights">
-                        <ReactFontLoader url='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap' />
-                        <div className="rights-box" style={{ fontFamily: 'Work Sans' }}>
+                        <div className="rights-box">
                             <h1>POUŽITÉ ZDROJE</h1>
                             <h2>Logo</h2>
                             <p>Link na zdroj (source link): <a href='https://pngio.com/PNG/a104248-eyebrow-logo-png.html'>Eyebrow logo from pngio.com</a></p>
