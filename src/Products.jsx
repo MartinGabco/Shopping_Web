@@ -77,11 +77,8 @@ class Products extends ProductsHandleSource {
           
         return (
             <div className="products-content">
-                <div className="preview">
-                    <img className="promo-image" src={Promo_Image}/>              
-                    <div className="carousel-box">     
-                        <Carousel />
-                    </div>
+                <div className="preview">   
+                    <div className="carousel-wrapper"><Carousel /></div>
                 </div>
                 <div className="user-area">
                     <div className="list-group-box">
@@ -99,7 +96,7 @@ class Products extends ProductsHandleSource {
                             />
                         </header>
                         <main className="shop-main" id="sale_button">
-                            <p className="number_products w-25">Počet produktov v databáze: {totalCount}</p>
+                            <p className="number_products w-25">Počet produktov v databázi: {totalCount}</p>
                             <MainContent 
                                 products={products}
                                 onDelete={this.handleDelete}
@@ -119,7 +116,7 @@ class Products extends ProductsHandleSource {
                             </div>
                         </main>
                     </div>
-                </div>            
+                </div>         
             </div>
         )
     }

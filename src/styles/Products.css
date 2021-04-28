@@ -24,7 +24,8 @@
   overflow: hidden;
 }
 .products-content .preview {
-  height: 34em;
+  width: 100%;
+  height: 41em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,9 +34,20 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 3.5em;
+  background: #56CCF2;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2F80ED), to(#56CCF2));
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.products-content .preview .promo-image {
-  width: 36.66em;
+.products-content .preview .carousel-wrapper {
+  width: 50%;
+  height: auto;
 }
 .products-content .user-area {
   min-height: 50em;

@@ -3,7 +3,8 @@
 /*Properties of the children*/
 .navbar {
   width: 16.8em;
-  margin: 1.75em 1.75em 0 0;
+  margin: 0 1.75em 0 0;
+  padding-top: 2.1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

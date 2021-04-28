@@ -4,8 +4,8 @@
 .carousel,
 .first,
 .second {
-    width: 51em;
-    height: 34em;
+    width: 100%;
+    height: 100%;
     background: no-repeat;
 }
 
@@ -19,7 +19,7 @@
 .first {
     padding: 11em 0em 0 7.85em;
     @media #{$screen-laptop-down} {
-        padding: 8.5em 10em 0 9.5em;
+        padding: 8.5em 7em 0 8em;
     }
 
     .title-box {
