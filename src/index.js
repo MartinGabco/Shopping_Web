@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom'
 
 //styles
@@ -9,15 +8,12 @@ import './bootstrap-4.1.3-dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 
 import App from './App';
-import store from './store/index';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Provider store={store}> 
      <BrowserRouter>
         <App />      
-     </BrowserRouter>
-   </Provider>,
+     </BrowserRouter>,
    document.getElementById('root') 
 );
 
