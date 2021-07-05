@@ -6,6 +6,7 @@ import '../styles/ShoppingBasket.css';
 
 
 const ShoppingBasket = ({ totalCount }) => {
+
     return (
         <div className="basket">
             <i className="fa fa-shopping-cart size: fa-2x"></i>

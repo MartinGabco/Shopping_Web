@@ -13,7 +13,6 @@ import './styles/App.css';
 
 //import logo
 import logo from '../src/images/EyeBrowLogo.jpg';
-
 class App extends Component {
     render() {
         return (
@@ -31,7 +30,7 @@ class App extends Component {
                     <Switch>
                         <Route path="/" component={Products} exact />                
                         <Route path="/forum" component={Forum} />
-                        <Route path="/shopping_basket" component={Shopping_Basket} />                                                        
+                        <Route path="/shopping_basket" component={Shopping_Basket} />                                                  
                     </Switch>
                 </main>
                 <footer className="footer">
