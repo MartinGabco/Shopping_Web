@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
-import Like from '../utils/Like';
+import React, { Component } from 'react';
 import CounterWrapper from './CounterWrapper';
+import Like from '../utils/Like';
 import ShoppingBasket from './ShoppingBasket';
 
 //styles
 import '../styles/MainContent.css';
+import '../styles/CounterWrapper.css';
 
 const MainContent = props => {
+
     const { products, onDelete, onLike, onSort, onIncrement, onDecrement } = props;
 
     return (
@@ -36,11 +38,13 @@ const MainContent = props => {
                             <span className="price-wrap"><strong>{product.price}{product.price_sign}</strong></span>
                         </div>
                         <div className="counter-box">
-                            <CounterWrapper 
-                                key={product._id}
-                                onIncrement={onIncrement}
-                                onDecrement={onDecrement}
+                            <CounterWrapper
                                 product={product}
+                                key={product.id} 
+                                image={product.image}
+                                title={product.title}
+                                price={product.price} 
+                                onIncrement={onIncrement}
                             />
                         </div>
                     </li>

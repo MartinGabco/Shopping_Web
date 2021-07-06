@@ -96,7 +96,7 @@ class Products extends ProductsHandleSource {
                             />
                         </header>
                         <main className="shop-main" id="sale_button">
-                            <p className="number_products w-25">Počet produktov v databázi: {totalCount}</p>
+                            <p className="number_products w-25">Počet produktov v databáze: {totalCount}</p>
                             <MainContent 
                                 products={products}
                                 onDelete={this.handleDelete}
