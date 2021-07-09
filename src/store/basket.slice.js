@@ -4,20 +4,24 @@ const basketSlice = createSlice ({
     name: 'basket',
     initialState: {
         addedProducts: [],
-        total_price: 0,
+        total_quantity: 0,
     },
     reducers: {
         addProductToBasket(state, action) {
             const newAddedProduct = action.payload;
+            const existingProduct = state.addedProducts.find((addedProduct) => addedProduct.id === newAddedProduct.id);
+            if (!existingProduct) {
                 state.addedProducts.push({
-                    key: newAddedProduct.key,
+                    id: newAddedProduct.id,
                     image: newAddedProduct.image,
                     title: newAddedProduct.title,
-                    price: newAddedProduct.price,
                     quantity: 1,
-                })                
+                });  
+            } else {
+                existingProduct.quantity++;
             }
-        },
+        }
+    },
 });
 
 export const basketActions = basketSlice.actions;

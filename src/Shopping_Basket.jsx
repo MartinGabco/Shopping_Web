@@ -26,7 +26,7 @@ const Shopping_Basket = () => {
                         <td>{item.title}</td>
                         <td><img src={item.image} alt="image" width="100px" height="100px"/></td>
                         <td>{item.quantity}</td>
-                        <td>{item.price}</td>
+                        <td>{item.key}</td>
                         <td><i className="fa fa-times"></i></td>
                     </tr>))}
                     <tr>

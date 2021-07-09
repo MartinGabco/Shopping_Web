@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import CounterWrapper from './CounterWrapper';
 import Like from '../utils/Like';
 import ShoppingBasket from './ShoppingBasket';
@@ -19,13 +20,7 @@ const MainContent = props => {
             <div className="container">   
                 <ul className="products-box">
                     {products.map(product => (
-                        <TransitionGroup 
-                            transitionName="itemTrans" 
-                            transitionEnterTimeout={500} 
-                            transitionLeaveTimeout={600}
-                            conponent="li"
-                            li key={product._id} 
-                            className="item">
+                        <li key={product.id} className="item">
                             <div className="product-header">
                                 <div className="product-delete">
                                     <i onClick={() => onDelete(product)} className="fa fa-times"></i>
@@ -41,19 +36,19 @@ const MainContent = props => {
                                 </span>
                             </div>
                             <div className="price">
-                                <span className="price-wrap"><strong>{product.price}{product.price_sign}</strong></span>
+                                <span className="price-wrap"><strong>{product._id}{product.price_sign}</strong></span>
                             </div>
                             <div className="counter-box">
                                 <CounterWrapper
                                     product={product}
-                                    key={product.id} 
+                                    id={product.id} 
                                     image={product.image}
                                     title={product.title}
                                     price={product.price} 
                                     onIncrement={onIncrement}
                                 />
                             </div>
-                        </TransitionGroup>
+                        </li>
                     ))}
                 </ul>
             </div>
