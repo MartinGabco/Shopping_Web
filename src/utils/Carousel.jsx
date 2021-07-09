@@ -4,8 +4,9 @@ import jQuery from 'jquery';
 import ReactFontLoader from 'react-font-loader';
 
 import '../styles/Carousel.css';
+import '../styles/Products.css';
 
-import Image_1 from '../images/different-cosmetics-types-scattered-beige-table.jpg';
+import Image_1 from '../images/different-cosmetics-types-scattered-table.jpg';
 import Image_2 from '../images/professional-cosmetics-with-copy-space.jpg';
 
 class Show extends Component {
@@ -38,7 +39,7 @@ class Show extends Component {
                             </a>
                         </div>
                     </div>
-                </div>            
+                </div>
                 <div class="image">
                     <div className="first" style={{ backgroundImage: `url(${Image_1})`}}>
                         <div className="title-box">  
@@ -47,7 +48,7 @@ class Show extends Component {
                             <h1 style={{ fontFamily: 'Open Sans' }}>OČNÝ MAKEUP</h1>                            
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         );
     }

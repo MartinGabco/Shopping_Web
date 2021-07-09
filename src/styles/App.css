@@ -11,16 +11,9 @@
 .App header {
   min-height: 5em;
   padding: 0 1.95em 0 1.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -moz-flex-direction: horizontal;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-direction: row;
   justify-content: space-between;
   background: #ffffff;
 }
@@ -37,14 +30,9 @@
 .App footer .rights {
   min-height: 40.4em;
   padding: 3.5em 0 3.5em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -moz-flex-direction: horizontal;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   background-color: #66ffff;
 }
 .App footer .rights .rights-box {
@@ -52,15 +40,9 @@
   height: 35em;
   margin: 0 auto;
   padding: 3em 1em 1em 4em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -moz-flex-direction: vertical;
-  -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -ms-flex-line-pack: space-around;
+  flex-direction: column;
   align-content: space-around;
   background-color: #ffff00;
 }
@@ -79,16 +61,9 @@
 .App footer .design {
   min-height: 8em;
   padding-top: 3.25em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -moz-flex-direction: horizontal;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  flex-direction: row;
   justify-content: center;
   background-color: #ffffff;
 }/*# sourceMappingURL=App.css.map */

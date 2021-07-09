@@ -10,15 +10,9 @@
   height: 4em;
   padding: 0.5em 0.55em 0.5em 0.55em;
   margin: 0 12em 1em 64.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -moz-flex-direction: horizontal;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
+  flex-direction: row;
   justify-content: space-around;
   color: #00bfff;
   background-color: #ffff00;

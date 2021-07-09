@@ -21,6 +21,8 @@ import _ from 'lodash';
 
 //css
 import './styles/Products.css';
+// React Transition Group
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import Promo_Image from './images/Pngtree_eyelashes and eyebrows make up_5652261.png'
 class Products extends ProductsHandleSource {
@@ -78,15 +80,17 @@ class Products extends ProductsHandleSource {
         return (
             <div className="products-content">
                 <div className="preview">   
-                    <div className="carousel-wrapper"><Carousel /></div>
+                    <Carousel />
                 </div>
                 <div className="user-area">
                     <div className="list-group-box">
-                        <ListGroup 
-                            items={this.state.brands}
-                            onItemSelect={this.handleBrandSelect}
-                            selectedItem={this.state.selectedBrand}
-                        />
+                        <TransitionGroup>
+                            <ListGroup 
+                                items={this.state.brands}
+                                onItemSelect={this.handleBrandSelect}
+                                selectedItem={this.state.selectedBrand}
+                            />                            
+                        </TransitionGroup>
                     </div>
                     <div className="shop-content">
                         <header className="shop-header">

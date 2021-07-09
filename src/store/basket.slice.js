@@ -4,20 +4,20 @@ const basketSlice = createSlice ({
     name: 'basket',
     initialState: {
         addedProducts: [],
-        quantity: 0,
         total_price: 0,
     },
     reducers: {
         addProductToBasket(state, action) {
             const newAddedProduct = action.payload;
-            state.addedProducts.push({
-                key: newAddedProduct.key,
-                image: newAddedProduct.image,
-                title: newAddedProduct.title,
-                price: newAddedProduct.price
-            })
-        }
-    }
+                state.addedProducts.push({
+                    key: newAddedProduct.key,
+                    image: newAddedProduct.image,
+                    title: newAddedProduct.title,
+                    price: newAddedProduct.price,
+                    quantity: 1,
+                })                
+            }
+        },
 });
 
 export const basketActions = basketSlice.actions;
