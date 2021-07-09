@@ -57,10 +57,10 @@
                 .number_products {
                     height: 2.5em;
                     padding: 0.5em 0 0 0;
-                    margin: $margin-primary;
-                    color: $color-first;
-                    text-align: center;
-                    background-color: $color-products;
+                    margin-bottom: 3em;
+                    text-align: center;                    
+                    color: $color-user;
+                    background-color: $color-secondary;
                     @media #{$screen-laptop-down} {
                         height: 210%; 
                         padding: 1.15em 0em 1em 0;

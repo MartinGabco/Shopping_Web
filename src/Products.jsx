@@ -84,13 +84,11 @@ class Products extends ProductsHandleSource {
                 </div>
                 <div className="user-area">
                     <div className="list-group-box">
-                        <TransitionGroup>
-                            <ListGroup 
-                                items={this.state.brands}
-                                onItemSelect={this.handleBrandSelect}
-                                selectedItem={this.state.selectedBrand}
-                            />                            
-                        </TransitionGroup>
+                        <ListGroup 
+                            items={this.state.brands}
+                            onItemSelect={this.handleBrandSelect}
+                            selectedItem={this.state.selectedBrand}
+                        />                            
                     </div>
                     <div className="shop-content">
                         <header className="shop-header">

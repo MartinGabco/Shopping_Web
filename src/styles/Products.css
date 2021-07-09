@@ -61,10 +61,10 @@
 .products-content .user-area .shop-content .shop-main .number_products {
   height: 2.5em;
   padding: 0.5em 0 0 0;
-  margin: 0 auto;
-  color: #0000ff;
+  margin-bottom: 3em;
   text-align: center;
-  background-color: #ffff00;
+  color: #ff0000;
+  background-color: #ffffff;
 }
 @media (max-width: 82.6875em) {
   .products-content .user-area .shop-content .shop-main .number_products {
