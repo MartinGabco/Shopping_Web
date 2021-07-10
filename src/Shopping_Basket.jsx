@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
+// Quantity
+import Quantity from './utils/Quantity';
+
 // Styles
 import './styles/Shopping_Basket.css';
 
@@ -21,7 +24,6 @@ const Shopping_Basket = () => {
                         <th>Názov</th>
                         <th>Obrázok</th>
                         <th>Počet kusov</th>
-                        <th>Hodnota</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -29,8 +31,12 @@ const Shopping_Basket = () => {
                     {basketItems.map(item => (<tr>
                         <td>{item.title}</td>
                         <td><img src={item.image} alt="image" width="100px" height="100px"/></td>
-                        <td>{item.quantity}</td>
-                        <td>{item.value}</td>
+                         <td className="quantityWrapper">
+                            <Quantity
+                                quantity_item = {item.quantity}
+                                item = {item}
+                            />
+                        </td>
                         <td><i className="fa fa-times"></i></td>
                     </tr>))}
                     <tr>

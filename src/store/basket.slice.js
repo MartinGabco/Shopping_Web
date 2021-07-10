@@ -22,7 +22,14 @@ const basketSlice = createSlice ({
                 existingProduct.quantity++;
                 existingProduct.value++;
             }
-        }
+        },
+        decreaseNumberOfProductInBasket(state, action) {
+            const id = action.payload;
+            const existingProduct = state.addedProducts.find((addedProduct) => addedProduct.id === id);
+            if (existingProduct.quantity >= 1) {
+                existingProduct.quantity--;
+            }
+        },
     },
 });
 
