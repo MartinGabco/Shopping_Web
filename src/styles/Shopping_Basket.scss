@@ -7,6 +7,8 @@
     width: $width-primary;
     height: 41em;
     padding: 5em 0 5em 0;
+    scroll-behavior: smooth;
+    
     @include flexbox();
     @include flex-direction(row);
     @include justify-content(space-around);

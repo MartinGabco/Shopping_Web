@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 //components
 import Pagination from './components/Pagination';
@@ -98,6 +99,7 @@ class Products extends ProductsHandleSource {
                                 value={searchQuery} 
                                 onChange={this.handleSearch}   
                             />
+                            <Link to="/shopping_basket" className="link">Chcem prejsť do košíka</Link>
                         </header>
                         <main className="shop-main" id="sale_button">
                             <p className="number_products w-25">Počet produktov v databáze: {totalCount}</p>

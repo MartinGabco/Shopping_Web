@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 // Styles
 import './styles/Shopping_Basket.css';
 
 const Shopping_Basket = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const basketItems = useSelector((state) => state.basket.addedProducts);
 
     let basket_show = <p>Vaš košík je prázdny.</p>
