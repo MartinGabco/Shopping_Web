@@ -6,7 +6,6 @@ import './styles/Shopping_Basket.css';
 
 const Shopping_Basket = () => {
     const basketItems = useSelector((state) => state.basket.addedProducts);
-    console.log(basketItems);
 
     let basket_show = <p>Vaš košík je prázdny.</p>
 
@@ -26,7 +25,7 @@ const Shopping_Basket = () => {
                         <td>{item.title}</td>
                         <td><img src={item.image} alt="image" width="100px" height="100px"/></td>
                         <td>{item.quantity}</td>
-                        <td>{item.key}</td>
+                        <td>{item.value}</td>
                         <td><i className="fa fa-times"></i></td>
                     </tr>))}
                     <tr>

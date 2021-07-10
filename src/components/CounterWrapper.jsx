@@ -8,9 +8,7 @@ import '../styles/CounterWrapper.css';
 const CounterWrapper = (props) => {
     const dispatch = useDispatch();
 
-    const { id, image, title, price, product, onIncrement, onDecrement } = props;
-
-    console.log(id);
+    const { id, image, title, price, product, value, onIncrement, onDecrement } = props;
 
     const addToBasketHandler = (product) => {
         dispatch(
@@ -19,7 +17,8 @@ const CounterWrapper = (props) => {
                 image,
                 title,
                 price,
-                quantity: 1
+                quantity: 1,
+                value
             })
         );
     };
@@ -33,7 +32,7 @@ const CounterWrapper = (props) => {
     return (
         <div className="counter-wrapper">
             <button
-                onClick={(product) => addToBasketHandler(product)}
+                onClick={() => {addToBasketHandler(product); onIncrement(product)}}
                 className="btn btn-danger btn-sm m-2"
             >
                 Pridať do košíka

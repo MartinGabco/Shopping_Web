@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import CounterWrapper from './CounterWrapper';
 import Like from '../utils/Like';
-import ShoppingBasket from './ShoppingBasket';
 
 //styles
 import '../styles/MainContent.css';
@@ -35,8 +34,8 @@ const MainContent = props => {
                                     <span className="description">{product.description}</span>   
                                 </span>
                             </div>
-                            <div className="price">
-                                <span className="price-wrap"><strong>{product._id}{product.price_sign}</strong></span>
+                            <div className="number">
+                                <span className="number-wrap"><strong>{product.value}</strong></span>
                             </div>
                             <div className="counter-box">
                                 <CounterWrapper
@@ -45,6 +44,7 @@ const MainContent = props => {
                                     image={product.image}
                                     title={product.title}
                                     price={product.price} 
+                                    value={product.value}
                                     onIncrement={onIncrement}
                                 />
                             </div>

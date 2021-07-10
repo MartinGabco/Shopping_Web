@@ -76,7 +76,9 @@ class Products extends ProductsHandleSource {
         const { totalCount, data: products } = this.getPagedData();
 
         const { data } = this.context;
-          
+
+        console.log(this.state.products);
+
         return (
             <div className="products-content">
                 <div className="preview">   

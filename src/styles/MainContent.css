@@ -10,7 +10,7 @@
 .main,
 .image-box,
 .name-box,
-.price,
+.number,
 .counter-box {
   width: 100%;
 }
@@ -97,7 +97,7 @@
   text-align: center;
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
-.container .products-box .item .price {
+.container .products-box .item .number {
   height: 5%;
   padding-top: 0.45em;
   display: flex;

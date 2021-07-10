@@ -10,7 +10,7 @@
 .main,
 .image-box,
 .name-box,
-.price,
+.number,
 .counter-box {
     width: $width-primary;
 }
@@ -98,7 +98,7 @@
                 }                
             }
 
-            .price {
+            .number {
                 height: 5%;
                 padding-top: 0.45em;                
                 @include flexbox();

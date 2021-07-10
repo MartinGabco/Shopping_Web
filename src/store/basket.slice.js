@@ -16,9 +16,11 @@ const basketSlice = createSlice ({
                     image: newAddedProduct.image,
                     title: newAddedProduct.title,
                     quantity: 1,
+                    value: newAddedProduct.value
                 });  
             } else {
                 existingProduct.quantity++;
+                existingProduct.value++;
             }
         }
     },

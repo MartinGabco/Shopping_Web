@@ -43,14 +43,13 @@ class ProductsSource extends Component {
         this.setState({ sortColumn: { path, order: 'asc' } });
     }
 
-    
-    handleDecrement = product => {
+    handleIncrement = product => {
         const products = [...this.state.products];
         const index = products.indexOf(product);
         products[index] = { ...product };
-        products[index].value--;
-        this.setState({ products });
-    };
+        products[index].value++;
+        this.setState({ products });        
+    }
 }
 
 export default ProductsSource
