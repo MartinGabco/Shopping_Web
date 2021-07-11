@@ -5,7 +5,7 @@
 
 .shopping_basket {
     width: $width-primary;
-    height: 41em;
+    min-height: 41em;
     padding: 5em 0 5em 0;
     scroll-behavior: smooth;
     
@@ -15,9 +15,84 @@
     background: #F7971E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    
     .select-box {
-        width: 60%;
-        min-height: 50%;
+        width: 85%;
+        height: 50%;
+        padding: 5em 2em 7em 2em;
         background: $color-secondary;
+
+        .statement {
+            width: $width-primary;
+            padding-bottom: 3em;
+
+            p {
+                font-size: 1.2em;
+                text-align: center;
+                color: $color-user;
+            }
+        }
+
+        .basket {
+            width: $width-primary;
+
+            h2 {
+                text-align: center;
+                font: {
+                    weight: lighter;
+                    size: 2.75em;
+                }
+            }           
+        }
+
+        .basket_content {
+            width: $width-primary;
+            height: 60%;
+            padding: 4em 4em 2em 4em;
+
+            table {
+                width: $width-primary;
+                height: auto;
+                thead {
+                    height: 4em;
+                    font-size: 1.2em;
+                    border-bottom: 0.025em solid $color-black;
+                    th {
+                        padding-right: 4em;
+                    }
+                    .image {
+                        p {
+                            margin-left: 0.6em;
+                        }
+                    }
+                    .numberCount {
+                        .items-sum {
+                            width: 10em;
+                            margin-left: 1.3em;
+                        }
+                    }
+                    .price {
+                        p {
+                            margin-left: -0.35em;
+                        }
+                    }
+                }
+    
+                tbody {
+                    tr {
+                        padding: 3em;
+                    }
+                }
+            }
+        }
+        
+        .linkToProducts {
+            text-decoration: none;
+            color: $color-message;
+            &:hover,
+            &:focus {
+                color: $color-user;
+            }
+        }
     }
 }

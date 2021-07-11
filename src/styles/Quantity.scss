@@ -1,0 +1,17 @@
+//imports
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+@import 'imports/colors.scss';
+
+.quantity-body {
+    width: 10em;
+    height: 2.5em;
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+
+    p {
+        margin-top: 0.5em;
+        font-weight: bold;
+    }
+}

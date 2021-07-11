@@ -41,6 +41,8 @@ class Products extends ProductsHandleSource {
     componentDidMount() {
         const brands = [{name:'Všetky značky'},...getBrands()];
         this.setState({ _id: "", products: getProducts(), brands });
+
+        window.scrollTo(750, 750);
     }
 
     // common method for paginating and filtering

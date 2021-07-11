@@ -3,7 +3,7 @@
 /*Properties of the children*/
 .shopping_basket {
   width: 100%;
-  height: 41em;
+  min-height: 41em;
   padding: 5em 0 5em 0;
   scroll-behavior: smooth;
   display: flex;
@@ -17,7 +17,62 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .shopping_basket .select-box {
-  width: 60%;
-  min-height: 50%;
+  width: 85%;
+  height: 50%;
+  padding: 5em 2em 7em 2em;
   background: #ffffff;
+}
+.shopping_basket .select-box .statement {
+  width: 100%;
+  padding-bottom: 3em;
+}
+.shopping_basket .select-box .statement p {
+  font-size: 1.2em;
+  text-align: center;
+  color: #ff0000;
+}
+.shopping_basket .select-box .basket {
+  width: 100%;
+}
+.shopping_basket .select-box .basket h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.75em;
+}
+.shopping_basket .select-box .basket_content {
+  width: 100%;
+  height: 60%;
+  padding: 4em 4em 2em 4em;
+}
+.shopping_basket .select-box .basket_content table {
+  width: 100%;
+  height: auto;
+}
+.shopping_basket .select-box .basket_content table thead {
+  height: 4em;
+  font-size: 1.2em;
+  border-bottom: 0.025em solid #000000;
+}
+.shopping_basket .select-box .basket_content table thead th {
+  padding-right: 4em;
+}
+.shopping_basket .select-box .basket_content table thead .image p {
+  margin-left: 0.6em;
+}
+.shopping_basket .select-box .basket_content table thead .numberCount .items-sum {
+  width: 10em;
+  margin-left: 1.3em;
+}
+.shopping_basket .select-box .basket_content table thead .price p {
+  margin-left: -0.35em;
+}
+.shopping_basket .select-box .basket_content table tbody tr {
+  padding: 3em;
+}
+.shopping_basket .select-box .linkToProducts {
+  text-decoration: none;
+  color: #3333ff;
+}
+.shopping_basket .select-box .linkToProducts:hover, .shopping_basket .select-box .linkToProducts:focus {
+  color: #ff0000;
 }/*# sourceMappingURL=Shopping_Basket.css.map */

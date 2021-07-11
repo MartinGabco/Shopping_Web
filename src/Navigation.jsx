@@ -23,8 +23,10 @@ const Navigation = ({ products, forum, shopping_basket }) => {
                     <NavLink className="nav-item nav-link font-weight-light" to="/" exact><a>Produkty</a></NavLink>
                     <NavLink className="nav-item nav-link font-weight-light" to="/forum"><a>Fórum</a></NavLink>
                     <NavLink className="nav-item nav-link font-weight-light" to="/shopping_basket">
-                        <a>Košík</a>
-                        <span class="badge badge-pill badge-primary">{totalQuantitySum}</span>
+                        <div className="basketNavLinkWrapper">
+                            <a>Košík</a>
+                            <span className="badge badge-pill badge-primary">{totalQuantitySum}</span>
+                        </div>
                     </NavLink>
                 </div>
             </div>

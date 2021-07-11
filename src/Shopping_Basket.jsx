@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import {Link} from 'react-router-dom';
 
 // Import util components
 import Quantity from './utils/Quantity';
@@ -30,15 +31,15 @@ const Shopping_Basket = () => {
         basket_show = <table>
             <thead>
                 <tr>
-                    <th>Názov</th>
-                    <th>Obrázok</th>
-                    <th>Počet kusov</th>
-                    <th>Cena</th>
+                    <th className="name"><p>Názov</p></th>
+                    <th className="image"><p>Obrázok</p></th>
+                    <th className="numberCount"><p className="items-sum">Počet kusov</p></th>
+                    <th className="price"><p>Cena</p></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                {basketItems.map(item => (<tr>
+                {basketItems.map(item => (<tr className="rendered-row"> 
                     <td>{item.title}</td>
                     <td><img src={item.image} alt="image" width="100px" height="100px"/></td>
                         <td className="quantityWrapper">
@@ -63,6 +64,10 @@ const Shopping_Basket = () => {
                         <b>Celková suma: {(sumTotalPrice).toFixed(2)}</b>
                     </td>
                 </tr>
+                <tr>
+                    <td><a href="x" className="linkToOrder">Vytvoriť objednávku</a></td>
+                    <td><Link to="/" className="linkToProducts">Chcem pokračovať vo vyberaní produktov</Link></td>
+                </tr>
             </tbody>
         </table>
     }
@@ -70,7 +75,13 @@ const Shopping_Basket = () => {
     return (
         <div className="shopping_basket">
             <div className="select-box">
-                {basket_show}
+                <section className="statement">
+                    <p>Uvedené údaje nereflektujú realitu, ale slúžia <b>výhradne</b> na môj osobný tréning programátorských skillov.</p>
+                </section>
+                <section className="basket">
+                    <h2>NÁKUPNÝ KOŠÍK</h2>
+                </section>
+                <div className="basket_content">{basket_show}</div>
             </div>
         </div>            
     )

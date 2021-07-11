@@ -2,6 +2,9 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { basketActions } from '../store/basket.slice';
 
+// css style
+import '../styles/Quantity.css';
+
 const Quantity = (props) => {
     const dispatch = useDispatch();
 
@@ -42,7 +45,7 @@ const Quantity = (props) => {
     }
 
     return ( 
-        <React.Fragment>
+        <div className="quantity-body">
             <button type="button" 
                     class="btn btn-primary" 
                     onClick={() => addToBasketHandler()}
@@ -56,8 +59,8 @@ const Quantity = (props) => {
                     disabled={item.quantity === 0 ? 'disabled' : ''}
             >
                 -
-            </button>            
-        </React.Fragment>
+            </button>    
+        </div>
     );
 }
  
