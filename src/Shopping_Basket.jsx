@@ -16,7 +16,13 @@ const Shopping_Basket = () => {
 
     const basketItems = useSelector((state) => state.basket.addedProducts);
 
-    console.log(basketItems);
+    const totalPriceArray = basketItems.map(item => item.totalPrice);
+
+    // Sum of total dynamic prices
+    let sumTotalPrice = 0;
+    for (let i = 0; i < totalPriceArray.length; i++) {
+        sumTotalPrice += totalPriceArray[i];
+    }
 
     let basket_show = <p>Vaš košík je prázdny.</p>
 
@@ -50,7 +56,12 @@ const Shopping_Basket = () => {
                     /></td>
                 </tr>))}
                 <tr>
-                    <td className="sum"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td className="sum">
+                        <b>Celková suma: {(sumTotalPrice).toFixed(2)}</b>
+                    </td>
                 </tr>
             </tbody>
         </table>
