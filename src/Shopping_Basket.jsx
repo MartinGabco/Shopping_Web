@@ -16,6 +16,8 @@ const Shopping_Basket = () => {
 
     const basketItems = useSelector((state) => state.basket.addedProducts);
 
+    console.log(basketItems);
+
     let basket_show = <p>Vaš košík je prázdny.</p>
 
     if (basketItems.length > 0) {
@@ -25,6 +27,7 @@ const Shopping_Basket = () => {
                     <th>Názov</th>
                     <th>Obrázok</th>
                     <th>Počet kusov</th>
+                    <th>Cena</th>
                     <th></th>
                 </tr>
             </thead>
@@ -35,9 +38,12 @@ const Shopping_Basket = () => {
                         <td className="quantityWrapper">
                         <Quantity
                             quantity_item = {item.quantity}
+                            price = {item.price}
+                            totalPrice = {item.totalPrice}
                             item = {item}
                         />
                     </td>
+                    <td>{(item.totalPrice).toFixed(2).replace(/^-0$/, '0')}</td>
                     <td><Delete
                         quantity_item = {item.quantity}
                         item = {item}

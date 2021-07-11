@@ -8,7 +8,7 @@ import '../styles/CounterWrapper.css';
 const CounterWrapper = (props) => {
     const dispatch = useDispatch();
 
-    const { id, image, title, price, product, value, onIncrement, onDecrement } = props;
+    const { id, image, title, price, totalPrice, product, value, onIncrement, onDecrement } = props;
 
     const addToBasketHandler = (product) => {
         dispatch(
@@ -17,6 +17,7 @@ const CounterWrapper = (props) => {
                 image,
                 title,
                 price,
+                totalPrice,
                 quantity: 1,
                 value
             })
@@ -31,6 +32,7 @@ const CounterWrapper = (props) => {
 
     return (
         <div className="counter-wrapper">
+            <p>{totalPrice}</p>
             <button
                 onClick={() => {addToBasketHandler(product); onIncrement(product)}}
                 className="btn btn-danger btn-sm m-2"

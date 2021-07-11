@@ -7,13 +7,18 @@ const Quantity = (props) => {
 
     const { quantity_item, item } = props;
 
-    const { id, image, title, quantity, value } = props.item;
+    const { id, image, title, price, totalPrice, quantity, value } = props.item;
 
     const addToBasketHandler = () => {
         dispatch(
             basketActions.addProductToBasket({
                 id,
-                quantity            
+                image,
+                title,
+                price,
+                totalPrice,
+                quantity: 1,
+                value      
             })
         );
     };
@@ -21,6 +26,20 @@ const Quantity = (props) => {
     const decreaseBasketHandler = () => {
         dispatch(basketActions.decreaseNumberOfProductInBasket(id));
     };
+
+    const decreasePrice = () => {
+        dispatch(
+            basketActions.decreaseTotalPrice({
+                id,
+                image,
+                title,
+                price,
+                totalPrice,
+                quantity: 1,
+                value      
+            })
+        );       
+    }
 
     return ( 
         <React.Fragment>
@@ -33,7 +52,7 @@ const Quantity = (props) => {
             <p>{quantity_item}</p>
             <button type="button" 
                     class="btn btn-danger" 
-                    onClick={() => decreaseBasketHandler()}
+                    onClick={() => {decreaseBasketHandler(); decreasePrice()}}
                     disabled={item.quantity === 0 ? 'disabled' : ''}
             >
                 -
