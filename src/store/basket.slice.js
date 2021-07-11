@@ -30,6 +30,10 @@ const basketSlice = createSlice ({
                 existingProduct.quantity--;
             }
         },
+        removeProductFromBasket(state, action) {
+            const id = action.payload;
+            state.addedProducts = state.addedProducts.filter(addedProduct => addedProduct.id !== id);
+        }
     },
 });
 

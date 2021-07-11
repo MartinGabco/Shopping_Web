@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-// Quantity
+// Import util components
 import Quantity from './utils/Quantity';
+import Delete from './utils/Delete';
 
 // Styles
 import './styles/Shopping_Basket.css';
@@ -19,31 +20,34 @@ const Shopping_Basket = () => {
 
     if (basketItems.length > 0) {
         basket_show = <table>
-                <thead>
-                    <tr>
-                        <th>Názov</th>
-                        <th>Obrázok</th>
-                        <th>Počet kusov</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {basketItems.map(item => (<tr>
-                        <td>{item.title}</td>
-                        <td><img src={item.image} alt="image" width="100px" height="100px"/></td>
-                         <td className="quantityWrapper">
-                            <Quantity
-                                quantity_item = {item.quantity}
-                                item = {item}
-                            />
-                        </td>
-                        <td><i className="fa fa-times"></i></td>
-                    </tr>))}
-                    <tr>
-                        <td className="sum"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <thead>
+                <tr>
+                    <th>Názov</th>
+                    <th>Obrázok</th>
+                    <th>Počet kusov</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {basketItems.map(item => (<tr>
+                    <td>{item.title}</td>
+                    <td><img src={item.image} alt="image" width="100px" height="100px"/></td>
+                        <td className="quantityWrapper">
+                        <Quantity
+                            quantity_item = {item.quantity}
+                            item = {item}
+                        />
+                    </td>
+                    <td><Delete
+                        quantity_item = {item.quantity}
+                        item = {item}
+                    /></td>
+                </tr>))}
+                <tr>
+                    <td className="sum"></td>
+                </tr>
+            </tbody>
+        </table>
     }
 
     return (
