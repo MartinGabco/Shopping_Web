@@ -13,7 +13,7 @@ const Order = (props) => {
     const dispatch = useDispatch();
 
     const handleChange = (e) => {
-      dispatch(setUser(e.target.value))
+      dispatch()
     }
 
     return ( 

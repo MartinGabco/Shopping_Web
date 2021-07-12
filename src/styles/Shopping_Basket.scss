@@ -102,3 +102,22 @@
         }
     }
 }
+
+// Transition
+.row-wrapper-enter {
+    opacity: 0;
+}
+
+.row-wrapper-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+
+.row-wrapper-exit {
+    opacity: 1;
+}
+
+.row-wrapper-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+  }

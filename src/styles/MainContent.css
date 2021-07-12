@@ -110,20 +110,20 @@
   padding-bottom: 2em;
 }
 
-.itemTrans-enter {
-  transform: all scale(0.2);
-}
-
-.itemTrans-enter.itemTrans-enter-active {
+.items-wrapper-enter {
   opacity: 0;
-  transform: scale(0.75);
 }
 
-.itemTrans-leave {
+.items-wrapper-enter-active {
   opacity: 1;
-  transform: translateX(0);
+  transition: opacity 500ms;
 }
 
-.itemTrans-leave.itemTrans-leave-active {
+.items-wrapper-exit {
   opacity: 1;
+}
+
+.items-wrapper-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }/*# sourceMappingURL=MainContent.css.map */

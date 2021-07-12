@@ -114,21 +114,21 @@
     }  
 }
 
-.itemTrans-enter {
-     transform: all scale(0.2);
-  }
-  
-  .itemTrans-enter.itemTrans-enter-active {
+// Transition
+.items-wrapper-enter {
     opacity: 0;
-    transform: scale(0.75);
-  }
-  
-  .itemTrans-leave {
+}
+
+.items-wrapper-enter-active {
     opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .itemTrans-leave.itemTrans-leave-active {
-    opacity: 1;
+    transition: opacity 500ms;
   }
 
+.items-wrapper-exit {
+    opacity: 1;
+}
+
+.items-wrapper-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
