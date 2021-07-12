@@ -7,6 +7,7 @@ import Navigation from './Navigation';
 import Products from './Products';
 import Forum from './Forum';
 import Shopping_Basket from './Shopping_Basket';
+import Order from './components/Order';
 
 //styles ()
 import './styles/App.css';
@@ -30,7 +31,8 @@ class App extends Component {
                     <Switch>
                         <Route path="/" component={Products} exact />                
                         <Route path="/forum" component={Forum} />
-                        <Route path="/shopping_basket" component={Shopping_Basket} />                                                  
+                        <Route path="/shopping_basket" component={Shopping_Basket} />
+                        <Route path="/order" component={Order} />                                                   
                     </Switch>
                 </main>
                 <footer className="footer">

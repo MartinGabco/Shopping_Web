@@ -85,6 +85,12 @@
                 }
             }
         }
+
+        .linkToOrder {
+            padding: 0.5em 1em 0.65em 1em;
+            color: $color-response;
+            background-color: $color-link;
+        }
         
         .linkToProducts {
             text-decoration: none;

@@ -1,0 +1,45 @@
+//imports
+@import 'imports/flexbox.scss';
+@import 'imports/BaseProperties.scss';
+@import 'imports/colors.scss';
+
+.shopping_order {
+    width: $width-primary;
+    min-height: 41em;
+    padding: 5em 0 5em 0;
+    scroll-behavior: smooth;
+    
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    
+    .order-box {
+        width: 85%;
+        height: 50%;
+        padding: 5em 2em 7em 2em;
+        background: $color-secondary;
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: center;
+            padding-bottom: 2em;
+        }
+
+        .form-about {
+            max-width: 20%;
+            height: 10em;
+            @include flexbox;
+            @include flex-direction(column);
+
+                .first-name,
+                .last-name,
+                .your-email {
+                    margin-bottom: 1.5em;
+                }
+        }
+    }
+}

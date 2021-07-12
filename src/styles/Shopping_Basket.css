@@ -69,6 +69,11 @@
 .shopping_basket .select-box .basket_content table tbody tr {
   padding: 3em;
 }
+.shopping_basket .select-box .linkToOrder {
+  padding: 0.5em 1em 0.65em 1em;
+  color: #ffff1a;
+  background-color: #ff6600;
+}
 .shopping_basket .select-box .linkToProducts {
   text-decoration: none;
   color: #3333ff;

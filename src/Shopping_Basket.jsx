@@ -25,7 +25,7 @@ const Shopping_Basket = () => {
         sumTotalPrice += totalPriceArray[i];
     }
 
-    let basket_show = <p>Vaš košík je prázdny.</p>
+    let basket_show = <p>Váš košík je prázdny.</p>
 
     if (basketItems.length > 0) {
         basket_show = <table>
@@ -65,7 +65,7 @@ const Shopping_Basket = () => {
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="x" className="linkToOrder">Vytvoriť objednávku</a></td>
+                    <td><Link to="/order" className="linkToOrder">Vytvoriť objednávku</Link></td>
                     <td><Link to="/" className="linkToProducts">Chcem pokračovať vo vyberaní produktov</Link></td>
                 </tr>
             </tbody>
