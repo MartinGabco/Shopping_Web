@@ -8,7 +8,7 @@ const ListGroup = props => {
             {items.map(item => (
                 <li key={item[valueProperty]} 
                     onClick={() => onItemSelect(item)}
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer", background: "#ffffe6" }}
                     className={
                         item === selectedItem
                         ? "list-group-item list-group-item-action list-group-item-warning"

@@ -19,12 +19,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="header">
-                    <div className="navigation-box">
-                        <Navigation />
-                    </div>
-                    <div className="logo-box">
-                        <img className="eyebrow-logo" src={logo}/>
-                    </div>
+                    <Navigation />
                 </header>
                 <main className="content">
                     <div className="preview"></div>

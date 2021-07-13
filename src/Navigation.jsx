@@ -5,6 +5,9 @@ import { useSelector } from 'react-redux';
 //styles
 import './styles/Navigation.css';
 
+//import logo
+import logo from '../src/images/Pngtree_eyelashes and eyebrows make up_5652261.png';
+
 const Navigation = ({ products, forum, shopping_basket }) => {
 
     const quantityVariable = useSelector((state) => state.basket.addedProducts);
@@ -29,6 +32,9 @@ const Navigation = ({ products, forum, shopping_basket }) => {
                         </div>
                     </NavLink>
                 </div>
+            </div>
+            <div className="logo-box">
+                <img className="eyebrow-logo" src={logo}/>
             </div>
         </nav>
     )

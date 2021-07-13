@@ -4,15 +4,28 @@
 @import 'imports/colors.scss';
 
 .navbar {
-    width: 16.8em;
+    width: 100%;
+    height: 6.1em;
     margin: 0 1.75em 0 0;
     padding-top: 2.1em;
     @include flexbox();
     @include justify-content(flex-start);
     @include justify-content (space-between);
+    background-color: $color-secondary;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0.19em 0.63em rgb(0 0 0 / 0.2);
     
     .navbar-nav {
         font-size: 1.3em;
+        margin: 0 0 1.25em 0.35em;
+    }
+
+    .logo-box {
+        max-height: 100%;
+        padding-bottom: 7.2em;
+        margin-right: 0.35em;
     }
 
     .basketNavLinkWrapper {
